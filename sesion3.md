@@ -4,226 +4,234 @@
 ## Sesión 3 
 
 
-# Actividad 3: Ejercicios de operaciones básicas en Java.
+Actividad: Adición de contenido multimedia en un sitio web utilizando etiquetas HTML5
+Completa el siguiente código HTML añadiendo el contenido multimedia correspondiente en cada sección:
 
-1. Suma y multiplicación: Escribe un programa que solicite al usuario dos números enteros y luego imprima la suma y multiplicación de esos números.
+* 4 Imagenes.
+* 2 Videos.
+* 4 Audios.
+* 2 Inline Frame.
 
-### Solución:
+Utiliza encabezados para títulos en cada elemento (<h1>...<h6>).
 
-    import java.util. Scanner;
-    
-    public class EjerciciosSesion3 {
-         
-         public static void main (String [] args) {
-             Scanner entradaDatos = new Scanner (System.in);
-             
-             System.out.println("ingrese el primer numero");
-             int numl = entradaDatos.nextInt ();
-         
-             System.out.println("ingrese el segundo numero");
-             int num2 = entradaDatos.nextInt ();
+Crea una descripción para cada elemento utilizando párrafos (<p>).
 
-             int suma = numl + num2;
-             int multiplicacion = numl * num2;
+Además, puedes emplear las siguientes etiquetas para mejorar la estructura y estilo de tu contenido:
 
-             System.out.println ("La suma es: " + suma);
-             System.out.println ("La multiplicacion es: " + multiplicacion);
+Usa <strong> para resaltar texto importante.
+Utiliza <br> para insertar saltos de línea si es necesario.
+Agrega <span> para aplicar estilos específicos a porciones de texto.
+Emplea <i> para enfatizar o dar énfasis a palabras o frases.
+Utiliza <u> para subrayar texto cuando sea necesario.
+Considera el uso de <div> para crear secciones o contenedores para tu contenido, lo que puede facilitar la organización y el diseño de la página.
+
+### Solución.
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Etiquetas Multimedia HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2d9ada;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: rgb(21, 21, 27);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TROPIVUELTAS</h1>
+        <h3>Servicio de Mensajeria, diligencias, consignaciones y mas</h3>
+    </header>
+
+    <section>
+
+        <h1>Que es la Mensajeria?</h1>
+
+
+        <p>Es el servicio de transporte y reparto de cartas y paquetes, generalmente dentro de una misma población....
+            <a href="https://www.google.com/search?q=que+es+la+mensajeria&rlz=1C1CHBF_esCO1003CO1003&oq=que+es+la+mensajeria&gs_lcrp=EgZjaHJvbWUyCQgAEAAYQxiKBTIGCAEQRRg5MgcIAhAAGIAEMgcIAxAAGIAEMgwIBBAAGBQYhwIYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQg2MjEzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                target="_blank">mas informacion</a>
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <img src="mensajero.jpg" alt="mensajero" width="300">
+
+
+        <h1>Quien invento la mensajeria?</h1>
+
+
+        <p>Jenofonte atribuyó el primer uso de los mensajeros al príncipe Persa, Se dice que el mensajero de la griego
+            antiguo corrió 26 millas desde Maratón hasta Atenas para llevar la noticia de la victoria griega sobre los
+            persas en el año 490 a. C. La carrera de larga distancia conocida como maratón debe su nombre a esta
+            carrera..
+            <a href="https://es.wikipedia.org/wiki/Mensajero#:~:text=Jenofonte%20atribuy%C3%B3%20el%20primer%20uso,C."
+                target="_blank">mas informacion</a>
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <img src="mensajero antiguo.jpg" alt="mensajero antiguo" width="300">
+
+
+        <h1>Por que es importante la mensajeria de productos?</h1>
+
+        <p>La entrega oportuna y segura de los productos y documentos es esencial para generar confianza entre las
+            empresas y sus clientes. La mensajería y la paquetería confiables y eficientes demuestran el compromiso de
+            una empresa con la excelencia en el servicio al cliente y la calidad de sus productos.
+            <a href="https://mundoautonomos.org/importancia-mensajeria-paqueteria-en-las-empresas/#:~:text=La%20entrega%20oportuna%20y%20segura,la%20calidad%20de%20sus%20productos."
+                target="_blank">mas informacion</a>
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <img src="importancia de mensajero.jpg" alt="importancia de mensajero" width="400">
+    </section>
+
+
+    <h1>Que ofrece un servicio de mensajeria?</h1> <!-- Esta pagina de internet esta creada para solucionar tareas que en el momento la gente no pueda realizar -->
+
+
+    <p>Los servicios que prestan estas empresas de mensajería incluyen la recogida, admisión, clasificación, transporte,
+        distribución y entrega de cualquier carta o paquete, así como el envío de giros postales (envío de dinero a un
+        destinatario).
+        <a href="https://www.google.com/search?q=la+mensajeria+de+productos&sca_esv=557962971&rlz=1C1CHBF_esCO1003CO1003&sxsrf=AB5stBh3GcEPeKlr-r433rB98UEWMbhwqQ%3A1692321224469&ei=yMXeZNb4G_OuqtsPsN-fuAU&ved=0ahUKEwjW_Lfrg-WAAxVzl2oFHbDvB1cQ4dUDCA8&uact=5&oq=la+mensajeria+de+productos&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmxhIG1lbnNhamVyaWEgZGUgcHJvZHVjdG9zMgUQABiiBDIFEAAYogQyBRAAGKIESNXAAVDyGFjuuQFwDngBkAEAmAGfAqABkUeqAQcwLjIwLjI0uAEDyAEA-AEBqAIUwgIKEAAYRxjWBBiwA8ICBxAjGOoCGCfCAhYQABgDGI8BGOoCGLQCGIwDGOUC2AEBwgIWEC4YAxiPARjqAhi0AhiMAxjlAtgBAcICBRAAGIAEwgILEAAYgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICCxAAGIoFGLEDGIMBwgILEC4YgAQYxwEYrwHCAgsQLhiKBRixAxiDAcICCBAAGIAEGLEDwgIHEAAYigUYQ8ICDhAuGIAEGLEDGMcBGK8BwgIFEC4YgATCAgsQLhiABBixAxiDAcICDhAAGIAEGLEDGIMBGMkDwgIIEAAYigUYkgPCAg0QLhiKBRixAxiDARhDwgIIEC4YgAQYsQPCAhcQLhiABBixAxiXBRjcBBjeBBjgBNgBAsICDRAuGA0YgAQYsQMYsQPCAgcQABgNGIAEwgIZEC4YDRiABBixAxiXBRjcBBjeBBjgBNgBAsICBxAhGKABGArCAgsQLhiDARixAxiABMICChAAGIAEGBQYhwLCAhQQLhiABBiXBRjcBBjeBBjgBNgBAsICBxAuGA0YgATCAhYQLhgNGIAEGJcFGNwEGN4EGOAE2AECwgIGEAAYHhgNwgIIEAAYHhgNGA_CAggQABgIGB4YDcICDxAAGAgYHhgNGA8Y8QQYCsICCBAAGBYYHhgPwgIGEAAYFhgewgIFECEYoAHiAwQYACBBiAYBkAYIugYGCAEQARgLugYGCAIQARgU&sclient=gws-wiz-serp"
+            target="_blank">mas informacion</a>
+    </p>
+    <br>
+    <br>
+    <br>
+
+
+    <img src="servicio de mensajeria.jpg" alt="Servicio de mensajeria" width="400"> </section>
+
+
+    <section>
+        <h2>Videos</h2>
+        <p> <strong>DOMICILIO GRATIS AREA METROPOLITANA....!</strong></p>
+        <br>
+        <br>
+
+        <video src="Domicilio gratis.mp4" controls width="400"></video>
         
-             }
-
-    }
-
-2. Resta y división: Escribe un programa que tome dos números enteros ingresados por el usuario y calcule la resta y división de esos números.
-
-### Solución:
-
-    import java.util. Scanner;
-    
-    public class EjerciciosSesion3 {
-
-         public static void main (String [] args) {
-            Scanner entradaDatos = new Scanner (System.in);
-
-            System.out.println("ingrese el primer numero");
-            int numl = entradaDatos.nextInt ();
-
-            System.out.println ("ingrese el segundo numero");
-            int num2 = entradaDatos.nextInt ();
-
-            int resta = numl - num2;
-            int division = numl / num2;
-
-            System.out.println ("La resta es: " + resta);
-            System.out.println ("La division es: " + division);
-
-         }
-
-    }
-
-3. Operaciones combinadas: Escribe un programa que solicite al usuario tres números enteros y realice las siguientes operaciones: suma de los tres números, multiplicación del primer número por el segundo y división del resultado entre el tercer número.
-
-### Solución: 
-
-    import java.util. Scanner;
-
-    public class EjerciciosSesion3 {
-         
-         public static void main(String[] args) {
-             Scanner entradaDatos = new Scanner (System.in);
-
-             System.out.println ("ingrese el primer numero");
-             int numl = entradaDatos.nextInt ();
-
-             System.out.println ("ingrese el segundo numero");
-             int num2 = entradaDatos.nextInt ();
-
-             System.out.println("ingrese el tercer numero");
-             int num3 = entradaDatos.nextInt ();
-
-             int suma = numl + num2 + num3;
-             int total = (numl * num2) / num3;
-
-             System.out.println ("La suma de los tres numeros es: " + suma);
-             System.out.println ("el resultado de los dos primeros numeros dividido por el tercero es: " + total);
-
-         }
-
-    }
-
-4. Operaciones con decimales: Escribe un programa que solicite al usuario dos números decimales y realice las siguientes operaciones: suma, resta, multiplicación y división.
-
-### Solución:
-
-    import java.util. Scanner;
-
-    public class EjerciciosSesion3 {
-
-         public static void main (String [] args) {
-             Scanner entradaDatos = new Scanner (System.in);
-
-             System.out.println ("ingrese el primer numero decimal");
-             float numl = entradaDatos.nextFloat ();
-
-             System.out.println ("ingrese el segundo numero decimal");
-             float num2 = entradaDatos.nextFloat ();
-
-             float suma = num1 + num2;
-             float resta = num1 - num2;
-             float multiplicacion = num1 * num2;
-             float division = num1 / num2;
-
-             System.out.println ("La suma de los 2 numeros es: " + suma);
-             System.out.println ("La resta de los 2 numeros es: " + resta);
-             System.out.println ("La multiplicacion de los 2 numeros es: " + multiplicacion);
-             System.out.println ("La division de los 2 numeros es: " + division);
-
-         }
-
-    }
-
-5. Incremento y decremento: Escribe un programa que declare una variable entera y la inicialice con un valor. Luego, incrementa su valor en 1 y muestra el resultado. Después, decrementa su valor en 1 y muestra el resultado nuevamente.
-
-### Solución:
-
-    import java.util. Scanner;
-
-    public class EjerciciosSesion3 {
-
-         public static void main (String [] args) {
-             int numero = 51;
-
-             numero + = 3;
-             System.out.println ("El resultado del incremento en numero es: " + numero);
-
-             numero - = 0x3;
-             System.out.println ("El resultado del decremento en numero es: " + numero);
-
-         }
-
-    }
-
-6. Operador de asignación compuesta: Escribe un programa que declare una variable entera y la inicialice con un valor. Utiliza el operador de asignación compuesta para sumar 5 a la variable y luego mostrar su valor.
-
-### Solución:
-
-    import java.util. Scanner;
-
-    public class EjerciciosSesion3 {
-
-         public static void main (String [] args) {
-
-            int num= 53;
-            num + =5; 
-
-            System.out.println ("El resultado de la asignacion compuesta mas 5 es: " + num);
-
-         }
-
-    }
-
-7. Operadores lógicos: Escribe un programa que tome dos valores booleanos ingresados por el usuario y muestre el resultado de las operaciones lógicas AND, OR y NOT entre esos valores.
-
-### Solución:
-
-    import java.util. Scanner;
-
-    public class EjerciciosSesion3 {
-         
-         public static void main(String[] args) {
-             Scanner entradaDatos = new Scanner (System.in);
-
-             System.out.println ("ingreso a la montaña rusa");
-
-             System.out.println ("su edad es mayor a 18");
-             boolean edad = entradaDatos.hasNextBoolean ();
-
-             System.out.println ("su altura es mayor a 1 metro");
-             boolean altura = entradaDatos.hasNextBoolean ();
-
-             boolean ingresomontañaR1 = edad && altura;
-             boolean ingresomontañaR2 = !edad;
-             boolean ingresomontañaR3 = !altura;
-             boolean ingresomontañaR4 = edad || altura;
-
-             System.out.println ("Resultado de ingreso a la montañaR1 es: " + ingresomontañaR1);
-             System.out.println ("Resultado de ingreso a la montañaR2 es: " + ingresomontañaR2);
-             System.out.println ("Resultado de ingreso a la montañaR3 es: " + ingresomontañaR3);
-             System.out.println ("Resultado de ingreso a la montañaR4 es: " + ingresomontañaR4);
-
-         }
-
-    }
-
-8. Operador ternario: Escribe un programa que tome un número entero ingresado por el usuario y utilice el operador ternario para determinar si el número es positivo o negativo. Luego, muestra el resultado en la salida.
-
-### Solución:
-
-    import java.util. Scanner;
-
-    public class EjerciciosSesion3 {
-
-         public static void main(String[] args) {
-
-         Scanner entradaDatos = new Scanner(System.in);
-         System.out.println("Ingrese un número");
-
-         int num = entradaDatos.nextInt();
-
-         if (num == 1) {
-         System.out.println("Es un número entero");
-         } 
         
-         else if (num <= 1) {
-         System.out.println("Es un número negativo");
-         } 
-         else {
-         System.out.println("Es un número positivo");}
-    
-         }
-    }
+        <h2>Videos</h2>
+        <p>Aqui encontraras la recepcion de mercancia de los productos para su pronta entrega.</p>
+        <br>
+        <br>
+
+        <video src="mercancia.mp4" controls width="250"></video>
 
 
+        <h2>Videos</h2>
+        <p>Aqui encontraras el transporte de sus productos.</p>
+        <br>
+        <br>
 
+        <video src="mensajero moto.mp4" controls width="400"></video>
+        
+        
+        <h2>Videos</h2>
+        <p>Aqui te mostramos el proceso de nuestros servicios.</p>
+        <br>
+        <br>
+
+        <video src="Diligencias moto.mp4" controls width="400"></video>
+    </section>
+
+   
+    <section>
+        <h2>Bienvenida</h2>
+        <p>Bienvenidos a <strong>TROPIVUELTAS</strong> Servicio de Mensajeria, diligencias, consignaciones y mas; Contamos con la mejor logistica personalizada para que tus tareas o envios se realicen de forma rapida y agil.</p>
+
+        <audio src="tension.mp3" controls></audio>
+        
+        
+        <h2>Contáctanos</h2>
+        <p>Este es el primer paso para el inicio de muchas entregas y emociones que vamos a tener juntos,
+            muchas gracias por confiar en nosotros, en un momento nos comunicaremos contigo.</p>
+
+        <audio src="chatea con nosotros.mp3" controls></audio>
+        
+        
+        <h2>Recogida y entrega</h2>
+        <p>Te cuidamos tus envios como si fueran nuestros; no te preocupes que estan en buenas manos.</p>
+
+        <audio src="Recogida y entrega.mp3" controls></audio>
+        
+        
+        <h2>Llegada del mensajero</h2>
+        <p>Te hacemos la entrega en el lugar que tu elijas a la hora que decidas, recuerda que tu tranquilidad es la nuestra.
+            <strong>De nuevo GRACIAS por confiar en nosotros!.</strong></p>
+
+        <audio src="llegada del mensajero.mp3" controls></audio>
+        
+        
+    </section>
+
+    <section>
+        <h2>Mensajeria</h2>
+        <p>Lo que debes saber de un mensajero...</p>
+        <iframe width="560" height="315" src="https://www.educaweb.com/profesion/mensajero-moto-654/#:~:text=Los%20mensajeros%20en%20moto%20transportan,y%20garantizan%20su%20entrega%20segura." frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+        <h2>Manual de mensajeria</h2>
+        <p>Todo lo que debes saber para ser un buen mensajero...</p>
+        <iframe width="560" height="315" src="https://serwell.es/que-es-motomensajeria/" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p><i><strong>Fernando Sánchez Arenas</strong></i></p> <!-- Futuro programador con ayuda de Dios -->
+        <br>
+        <br>
+        CESDE
+        <br>
+        <br>
+        &copy;2023
+    </footer>
+
+</body>
+
+</html>
+
+### Link de la pagina
+
+file:///C:/Users/Fidel/OneDrive/Documentos/PAGINA%20WEB%20TROPIVUELTAS/Index.html
 
 
 
