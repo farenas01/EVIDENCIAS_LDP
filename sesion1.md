@@ -8,7 +8,7 @@
 
 Actividad de consulta
 
-1. ¿Qué es la lógica de programación?
+1. ¿Qué es la lógica de programación?c
     
     Respuesta: Es la organización y planificación de instrucciones en un algoritmo, con el objetivo de tornar visible  la implementación de un programa o software.
 
