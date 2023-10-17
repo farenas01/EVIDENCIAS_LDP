@@ -17,8 +17,8 @@ Además, combinar celdas en la tabla con los atributos rowspan y colspan, como s
 
 ### Solución
 
-<table border="5" cellpadding="3" cellspacing="10">
-  <thead>
+    <table border="5" cellpadding="3" cellspacing="10">
+    <thead>
     <tr>
       <th>Código</th>
       <th>Nombre</th>
@@ -33,8 +33,8 @@ Además, combinar celdas en la tabla con los atributos rowspan y colspan, como s
 
     </tr>
 
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     <tr>
       <td rowspan="2">23456</td>
       <td rowspan="2">COMPUTADOR PORTATIL.</td>
