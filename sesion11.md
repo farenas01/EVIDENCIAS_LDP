@@ -54,14 +54,45 @@ public class Ejercicio1 {
 
 Este programa modificado utiliza dos conjuntos: uno para rastrear los números que ya hemos visto (`numerosVistos`) y otro para rastrear los números repetidos (`numerosRepetidos`). Cuando se encuentra un número repetido, se agrega al conjunto `numerosRepetidos`. Al final del programa, se imprimen todos los números que aparecen más de una vez en el conjunto de números.
 
+### Solución
+
+```java
+    import java.util.Scanner;
+
+    public class BinarioADecimal {
+      public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa un número binario: ");
+        String numeroBinario = scanner.nextLine();
+
+        int decimal = convertirBinarioADecimal(numeroBinario);
+
+        System.out.println("El número decimal equivalente es: " + decimal);
+      }
+
+    public static int convertirBinarioADecimal(String numeroBinario) {
+        int longitud = numeroBinario.length();
+        int decimal = 0;
+
+        for (int i = 0; i < longitud; i++) {
+            char digito = numeroBinario.charAt(i);
+
+            // Verificar si el dígito es '0' o '1'
+            if (digito == '0') {
+                // Si es '0', no se agrega nada al decimal en esta posición
+            } else if (digito == '1') {
+                // Si es '1', se agrega 2 elevado a la posición correspondiente al decimal
+                decimal += Math.pow(2, longitud - 1 - i);
+            } else {
+                System.err.println("Número binario inválido. Debe contener solo 0 y 1.");
+                System.exit(1);
+            }
+        }
+
+        return decimal;
+        }
+    } 
 
 
-
-
-
-
-
-
-
-
-
+Lo que hace este programa es solicitar al usuario que ingrese un número binario como una cadena de caracteres y luego utiliza una función llamada convertirBinarioADecimal para realizar la conversión. La función recorre cada dígito del número binario, verifica si es '0' o '1', y calcula el valor decimal correspondiente. El resultado decimal se muestra en la pantalla.
