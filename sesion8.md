@@ -4,13 +4,13 @@
 ## Sesión 8 
 
 
-## Ejercicios de métodos en Java
+## Ejercicios de métodos en Java 
 
 1. Escribe un método que reciba dos números como parámetros y devuelva el mayor de los dos.
 
 ### Solución.
 
-import java.util.Scanner;
+import java.util.Scanner; 
 
   public class MayorDosNumeros {
     public static void main(String[] args) {
