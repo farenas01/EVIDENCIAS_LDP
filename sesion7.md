@@ -10,6 +10,7 @@
 
 ### Ejemplo Array
 
+```java
     import java.util.Arrays;
 
     public class EjercicioArray {

@@ -6,6 +6,7 @@
 
 ### Actividad 4: Ejercicios de control de flujo con expresiones compuestas.
 
+```java
     // Variables de tipo String
     String nombre = "Juan Pérez";
     String apellido = "González";
@@ -26,6 +27,7 @@
     int semestre = 2;
 
 
+
 Con la información anterior, implementa los siguientes ejercicios:
 
 1. Determinar si el estudiante es mayor de edad y tiene un estado activo.
@@ -42,6 +44,7 @@ Con la información anterior, implementa los siguientes ejercicios:
 
 ### Solución:
 
+```java
      import java.util. Scanner;
      
      public class Sesion4Logica {

@@ -12,6 +12,7 @@ Resolver los siguientes ejercicios:
 
 ### Solución
 
+```java
      import java.util.Scanner;
 
      public class SESION5 {
