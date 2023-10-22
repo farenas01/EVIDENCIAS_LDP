@@ -93,6 +93,7 @@ Este programa modificado utiliza dos conjuntos: uno para rastrear los números q
         return decimal;
         }
     } 
+    ```
 
 
 Lo que hace este programa es solicitar al usuario que ingrese un número binario como una cadena de caracteres y luego utiliza una función llamada convertirBinarioADecimal para realizar la conversión. La función recorre cada dígito del número binario, verifica si es '0' o '1', y calcula el valor decimal correspondiente. El resultado decimal se muestra en la pantalla.
