@@ -57,9 +57,9 @@ Este programa modificado utiliza dos conjuntos: uno para rastrear los números q
 ### Solución
 
 ```java
-    import java.util.Scanner;
+import java.util.Scanner;
 
-    public class BinarioADecimal {
+public class BinarioADecimal {
       public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
