@@ -29,116 +29,127 @@ Utilizar las etiquetas HTML apropiados para cada campo.
 
 ### Solución
 
-<!DOCTYPE html>
+```java
+     import java.util.Scanner;
 
-<body>
-    <head>
-    <form action="example.php">
-
-         
-            <h1>FORMULARIO DE NOMBRE</h1>
-
-            <br>
-            <br>
-        
-        <div>
-            
-        <label for="idnombreproducto"><strong>NOMBRE DEL PRODUCTO:</strong></label>
-        <input type="text" name="nombreproducto" id="idnombreproducto" placeholder="nombre del producto">
-    </div>
-    <br>
-
-    <div>
-        <label for="idCantidad"><strong>CANTIDAD:</strong></label>
-        <input type="number" name="cantidad" id="idCantidad" placeholder="cantidad">
-    </div>
-    <br>
+     public class SESION5 {
     
-    <div>
-        <label for="idPrecio Unitario"><strong>PRECIO UNITARIO:</strong></label>
-        <input type="number" name="Precio Unitario" id="idPrecio Unitario" placeholder="Precio Unitario">
-    </div>   
-    <br>
+         public static void main (String [] args){
+            int Multiplicando ;
+     
+            System.out.println("¿Que tabla desea Realizar?");
+            Scanner valor1 = new Scanner(System.in);
+            Multiplicando = valor1.nextInt();
+
+            int multiplicador = 1;
+            while(multiplicador <=5){
+            System.out.println(Multiplicando + " X " + multiplicador + " = " + Multiplicando * multiplicador );
+            multiplicador++;
     
-    <div>
-        <label for="idPrecio Total"><strong>PRECIO TOTAL:</strong></label>
-        <input type="number" name="Precio Total" id="idPrecio Total" placeholder="Precio Total">
-    </div>   
-    <br>
+            }
+        } 
+    }
+
+2. Pedir al usuario que ingrese una cadena de caracteres y contar la cantidad de caracteres que son números.
+
+### Solución 
+
+     import java.util.Scanner;
+
+     public class ContarNumeros {
+         public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         System.out.print("Ingrese una cadena de caracteres: ");
+         String cadena = sc.nextLine();
+
+         int i = 0;
+         int contadorNumeros = 0;
+
+         while (i < cadena.length()) {
+         char caracter = cadena.charAt(i);
+         if (caracter == '1' || caracter == '2' || caracter == '3' || caracter == '4' || caracter == '5' ||
+         caracter == 'a' || caracter == 'c' || caracter == 'f' || caracter == 'x' || caracter == 'r') {
+         contadorNumeros++;
+         }
+            i++;
+         }
+
+         System.out.println("La cadena ingresada contiene " + contadorNumeros + " Numeros.");
+         }
+     }
+
+### Ejercicios - do while
+
+1. Escribe un programa en Java que imprima los números del 1 al 100, pero que se detenga si el usuario introduce un número negativo.
+
+### Solución 
+
+     import java.util.Scanner;
+
+     public class Main {
+         public static void main(String[] args) {
+         Scanner entradaDatos = new Scanner(System.in);
+         int i = 1;     
+         System.out.println("Ingresa un numero:");
+         int numero =entradaDatos.nextInt();
+         do {System.out.println(i);
+         i++;         
+         } while(i<=100 && numero >=0 ); 
+         }
+     }
+
+3. Escribe un programa en Java que pida al usuario un número entero e imprima la tabla de multiplicar de ese número, pero que se detenga si el usuario introduce el número 0.
+
+### Solución
+
+     import java.util.Scanner;
+
+     public class SESION5 {
     
-    <div>
-        <label for="idDireccion del envio"><strong>DIRECCION DEL ENVIO:</strong></label>
-        <input type="text" name="Direccion del envio" id="idDireccion del envio" placeholder="Direccion del envio">
-    </div>   
-    <br>
-    <br>
-    <br>
-    <br>
- 
-        <h2>INFORMACIÓN DE CONTACTO</h2>
+         public static void main (String [] args){
+         int Multiplicando ;
+     
+         System.out.println("¿Que tabla desea Realizar?");
+         Scanner valor1 = new Scanner(System.in);
+         Multiplicando = valor1.nextInt();
 
-        <br>
-        <br>
+         int multiplicador = 1;
+         do {
+         System.out.println(num + " X " + multiplicador + " = " + num * multiplicador );
+         multiplicador++;
+    
+         }
+         while (i<25 && num!=0);
+         } 
+     }
 
-        <div>
-            <label for="idnombredelcliente"><strong>NOMBRE DEL CLIENTE:</strong></label>
-            <input type="text" name="nombreproducto" id="idnombredelcliente" placeholder="Nombre del cliente">
-        </div>
-        <br>
+### Ejercicios - for
 
-        <div>
-            <label for="idNúmerodeCédula"><strong>NÚMERO DE CÉDULA:</strong></label>
-            <input type="text" name="idNúmerodeCédula" id="idNúmerodeCédula" placeholder="Número de Cédula" autocomplete="off">
-        </div>
-        <br>
+1. Imprimir los números impares del 1 al 50.
 
-        <div>
-        <label for="idcorreoelectronico"><strong>CORREO ELECTRONICO:</strong></label>
-        <input type="email" name="correoelectronico" id="idcorreoelectronico" placeholder="Correo electrónico">
-    </div>
-    <br>
+       import java.util.Scanner;
+       public class Main {
+         public static void main(String[] args) {
+         for (int i=1; i<50; i+=2) {
+         System.out.println(i);
+         }
+         }
+     }
 
-    <div>
-        <label for="idNumero telefonico"><strong>NÚMERO TELEFONICO:</strong></label>
-        <input type="tel" name="Numero telefonico" id="idNumero telefonico" placeholder="Numero telefonico">
-    </div>   
-    <br>
+2. Imprimir los números primos del 1 al 100.
 
-    <h2>MEDIOS DE PAGO</h2>
+     import java.util.Scanner;
 
-    <div>
-
-    <select name="Tipodetarjeta" id="Tipo de tarjeta">
-        <option value="VISA">VISA</option>
-        <option value="MASTERCARD" selected>MASTERCARD</option>
-        <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
-        <option value="BANCOLOMBIA">BANCOLOMBIA</option>
-    </select>
-
-    </div>
-
-    <br>
-       
-    <div>
-    <label for="idfechayhora"><strong>FECHA Y HORA DE ENTREGA:</strong></label>
-    <input type="datetime-local" name="fechayhora" id="idfechayhora">
-    </div>   
-    <br>
-        
-    <div>
-    <textarea name="comentarios" id="comentarios" placeholder="Ingrese sus comentarios aquí" rows="10" cols="50"></textarea>
-    </div>
-        
-        <input type="submit" value="Enviar">
-    </div>   
-    <br>
-
-      </form>
-    <br>
-
-    </head>
-    </body>
-    </html>
+     public class SESION5 
+    
+         public static void main (String [] args){
+         for (int i=1 ;i<=100);{
+         if (i % 2==0);{
+         System.out.println("i");
+         }
+         i ++;
+         }
+         }    
        
 
 
