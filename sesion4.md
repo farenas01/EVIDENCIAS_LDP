@@ -4,192 +4,146 @@
 ## Sesión 4
 
 
-### Actividad 4: Ejercicios de control de flujo con expresiones compuestas.
+Actividad: Crear una tabla HTML con información sobre productos.
+Escribir una tabla HTML con 10 filas que muestre información sobre productos reales. La tabla debe tener las siguientes columnas:
 
-```java
-    // Variables de tipo String
-    String nombre = "Juan Pérez";
-    String apellido = "González";
-    String identificación = "1000000001";
-    String correo = "juan.perez@ejemplo.com";
-    String carrera = "Desarrollo de Software";
-    String universidad = "Cesde";
-    // Variable de tipo int
-    int edad = 20;
-    // Variable de tipo boolean
-    boolean esActivo = true;
-    boolean becado = false;
-    // Variable de tipo char
-    char género = 'M';
-    // Variable de tipo double
-    double promedio = 4.5;
-    // Variable de tipo int
-    int semestre = 2;
+Código
+Nombre
+Descripción
+Precio
+Stock
+Fecha de creación
+Además, combinar celdas en la tabla con los atributos rowspan y colspan, como se muestra en la siguiente imagen.
+
+### Solución
+
+    <table border="5" cellpadding="3" cellspacing="10">
+    <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nombre</th>
+      <th colspan="2">Descripción</th>
+      <th>Precio</th>
+      <th>Stock</th>
+      <th>Fecha de creación</th>
+      <th>Lugar de creación</th>
+      <th>Ubicación</th>
+      <th>Estado</th>
+      <th>Garantía</th>
+
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr>
+      <td rowspan="2">23456</td>
+      <td rowspan="2">COMPUTADOR PORTATIL.</td>
+      <td colspan="2">Computador portatil core i6 de 10g, con 8 gigas de memoria ram.<br>Marca ASUS</td>
+      <td>$2.500.000<br><strong>PESOS</strong></td>
+      <td>1742<br><strong>UNIDADES</strong></td>
+      <td>15/12/23</td>
+      <td>MEDELLIN,<br>COLOMBIA</td>
+      <td>BODEGA.<br>78</td>
+      <td>NUEVO.</td>
+      <td>2 AÑOS A NIVEL MUNDIAL.<br><strong>NO APLICA PARA MAL USO...</strong></td>
 
 
+    </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">21234</td>
+      <td rowspan="2">TELEVISOR SMART TV.</td>
+      <td colspan="2">Tv Smart tv de 70 pulgadas marca Samsung.<br>Control inteligente por mando de voz</td>
+      <td rowspan="2">$3.800.000<br><strong>PESOS</strong></td>
+      <td rowspan="2">512<br><strong>UNIDADES</strong></td>
+      <td rowspan="2">11/06/23</td>
+      <td rowspan="2">MEDELLIN,<br>COLOMBIA</td>
+      <td rowspan="2">BODEGA.<br>32</td>
+      <td rowspan="2">DE EXHICICIÓN.</td>
+      <td rowspan="2">1 AÑO Y MEDIO</td>
 
-Con la información anterior, implementa los siguientes ejercicios:
+    </tr>
 
-1. Determinar si el estudiante es mayor de edad y tiene un estado activo.
-2. Determinar si el estudiante tiene una beca o una carrera relacionada con el desarrollo de software.
-3. Determinar si el estudiante está en el último semestre de su carrera y tiene un estado activo.
-4. Determinar si el estudiante tiene una carrera relacionada con el desarrollo de software y un promedio superior a 4.0.
-5. Mostrar toda la información del estudiante si está matriculado en el Cesde.
-6. Asignar una beca del 50% si el estudiante está matriculado en el Cesde, tiene un promedio superior a 4.0 y está activo.
-7. Determinar la cantidad de beca que recibe el estudiante según su promedio:
-     * 0.0 - 3.4: El estudiante no recibe beca.
-     * 3.5 - 3.9: El estudiante recibe una beca parcial del 25%.
-     * 4.0 - 4.4: El estudiante recibe una beca parcial del 50%.
-     * 4.5 - 5.0: El estudiante recibe una beca completa.
+    <tr>
+      <td colspan="2">Puedes comprar adicionalmente un teatro en casa complementario.</td>
+    </tr>
 
-### Solución:
+    </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">42134</td>
+      <td rowspan="2">MINICOMPONENTE.</td>
+      <td colspan="2">Dispositivo auditivo marca LG color negro, de 1200 watts de sonido.<br>Reconocimiento de voz.</td>
+      <td>$1.300.000<br><strong>PESOS</strong></td>
+      <td>7654<br><strong>UNIDADES</strong></td>
+      <td>25/08/23</td>
+      <td>MEDELLIN,<br>COLOMBIA</td>
+      <td>BODEGA.<br>21</td>
+      <td>NUEVO</td>
+      <td>1 AÑO.<br>ADICIONAL PUEDES COMPRAR UN SEGURO CONTRA ROBO.</td>
 
-```java
-     import java.util. Scanner;
-     
-     public class Sesion4Logica {
+    </tr>
 
-        public static void main(String[] args) {
-        String nombre = "Fernando";
-        String apellido = "Sánchez";
-        String documento = "128773612";
-        String correo = "Fernando.sánchez@programaciondesof.com";
-        String carrera = "Desarrollo de Software";
-        String universidad = "Cesde";
-        // Variable de tipo int: Se utiliza para asignar un valor a una variable de tipo entero.
-        int edad = 26;
-        // Variable de tipo boolean: Comprueba si dos valores son iguales.
-        boolean esActivo = true;
-        boolean becado = false;
-        // Variable de tipo char: se usa para almacenar el valor entero de un miembro del juego de caracteres que se puede representar.
-        char genero = 'M';
-        // Variable de tipo double: es similar a float, pero se utiliza cuando la precisión de una variable de coma flotante no es suficiente
-        double promedio = 4.5;
-        // Variable de tipo int: Se utiliza para asignar un valor a una variable de tipo entero.
-        int semestre = 3;
+    </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">98001</td>
+      <td rowspan="2">ESTUFA HACEB.</td>
+      <td colspan="2">Estufa electrica marca haceb, para uso con implementos de cocina especiales.</td>
+      <td rowspan="2">$1.800.000<br><strong>PESOS</strong></td>
+      <td rowspan="2">1742<br><strong>UNIDADES</strong></td>
+      <td rowspan="2">15/12/23</td>
+      <td rowspan="2">MEDELLIN,<br>COLOMBIA</td>
+      <td rowspan="2">BODEGA.<br>19</td>
+      <td rowspan="2">NUEVA<br><strong>IMPORTADA</strong></td>
+      <td rowspan="2">2 AÑOS</td>
 
-        System.out.println ("-----------------------------------------------------------------------------------");
-        System.out.println("Ejercicio1: Determinar si el estudiante es mayor de edad y se encuentra activo.");
-        System.out.println("-----------------------------------------------------------------------------------");
+    </tr>
 
-        if (edad >= 18) {
-            System.out.println("El estudiante es mayor de edad");
-            if (esActivo) {
-                System.out.println("el estudiante esta activo");
+    <tr>
+      <td colspan="2">Por la compra de la estufa te obsequiamos un juego de ollas.</td>
+    </tr>
 
-            } else {
-                System.out.println("El estudiante es menor de edad");
-            }
-        } else {
-            System.out.println("el estudiante no se encuentra activo");
-        }
+  </tbody>
+    
+</thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">42324</td>
+      <td rowspan="2">HORNO MICROONDAS.</td>
+      <td colspan="2">Horno microondas marca haceb de 1200 watts de energia.<br>Lector de huella.</td>
+      <td>$1.100.000<br><strong>PESOS</strong></td>
+      <td>656<br><strong>UNIDADES</strong></td>
+      <td>25/12/23</td>
+      <td>MEDELLIN,<br>COLOMBIA</td>
+      <td>BODEGA.<br>01</td>
+      <td>NUEVO</td>
+      <td>1 AÑO Y MEDIO.</td>
 
-        System.out.println("---------------------------------------------------------------------------------------------------------------");
-        System.out.println("ejercicio 2: Determinar si el estudiante tiene una beca o una carrera relacionada con el desarrollo de software.");
-        System.out.println("---------------------------------------------------------------------------------------------------------------");
-        if (carrera.equals("Desarrollo de Software") || becado) {
-            System.out.println("El estudiante cumple con alguna o con todas las condicciones");
+    </tr>
 
-        }
+    </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">14321</td>
+      <td rowspan="2">CELULAR HUAWEI P 40</td>
+      <td colspan="2">Dispositivo movil marca huawei de 16 gigas de RAM</td>
+      <td rowspan="2">$3.800.000<br><strong>PESOS</strong></td>
+      <td rowspan="2">1200<br><strong>UNIDADES</strong></td>
+      <td rowspan="2">01/09/23</td>
+      <td rowspan="2">MEDELLIN,<br>COLOMBIA</td>
+      <td rowspan="2">BODEGA.<br>19</td>
+      <td rowspan="2">NUEVO<br><strong>IMPORTADA</strong></td>
+      <td rowspan="2">2 AÑOS</td>
 
-        System.out.println("---------------------------------------------------------------------------------------------------------");
-        System.out.println("ejercicio 3: Determinar si el estudiante está en el último semestre de su carrera y tiene un estado activo.");
-        System.out.println("----------------------------------------------------------------------------------------------------------");
+    </tr>
 
-        if (semestre == 3) {
-            System.out.println("El estudiante cumple con las condicciones");
-        } else if (esActivo) {
-            System.out.println("El estudiante no cumple con una de las condiciones, pero si con una ");
-        } else {
-            System.out.println("El estudiante no cumple con ninguna de las condiciones.");
-        }
+    <tr>
+      <td colspan="2">Disponible en colores gris, negro y dorado.</td>
+    </tr>
 
-        System.out.println("------------------------------------------------------------------------------------------------------------------");
-        System.out.println("Ejercicio4: Determinar si el estudiante tiene una carrera relacionada con el desarrollo de software y un promedio superior a 4.0.");
-        System.out.println("-----------------------------------------------------------------------------------------------------------------------");
-
-        if (carrera.equals("Desarrollo de Software") && promedio >= 4.0) {
-            System.out.println("el estudiante cumple con los requisitos");
-        }
-
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-        System.out.println("Ejercicio5: Mostrar toda la información del estudiante si está matriculado.");
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-
-        if (universidad.equals("Cesde")) {
-            System.out.println("Nombre del estudiante: " + nombre + "\napellido del  estudiante: " + apellido
-                    + "\nNumero de documento: " + documento + "\nCorreo: " + correo + "\nNombre de carrera: " + carrera
-                    + "\nUniversidad: " + universidad + "\nEdad: " + edad + "\nEstado del estudiante: " + esActivo + "\nTiene beca: " + becado
-                    + "\nGenero: " + genero + "\nPromedio del estudiante: " + promedio + "\nSemestre: " + semestre);
-        } else {
-            System.out.println("El estudiante no esta matriculado.");
-        }
-
-        System.out.println("---------------------------------------------------------------------------------------------------------");
-        System.out.println("Ejercicio6: Asignar una beca del 50% si el estudiante está matriculado en el Cesde, si tiene un promedio superior a 4.0 y si está activo.");
-        System.out.println("--------------------------------------------------------------------------------------------------------------");
-
-        if (universidad.equals("Cesde") && promedio >= 4.0 && esActivo) {
-            System.out.println("El estudiante tiene una beca del 50% por cumplir con los requisitos. ");
-
-        } else {
-            System.out.println("El estudiante no cumple con los requisitos, por tal motivo no tiene beca");
-        }
-
-        System.out.println("------------------------------------------------------------------------------------");
-        System.out.println(" Ejercicio7: Determinar la cantidad en % de beca que recibe el estudiante según su promedio estudiantil.:\n"
-                + "0.0 - 3.4: El estudiante no es becado.\n"
-                + "3.5 - 3.9: El estudiante recibe una beca parcial del 25%.\n"
-                + "4.0 - 4.4: El estudiante recibe una beca parcial del 50%.\n"
-                + "4.5 - 5.0: El estudiante es becado completamente.");
-        System.out.println("--------------------------------------------------------------------------------------");
-
-        if (promedio >= 0.0 && promedio <= 3.4) {
-            System.out.println("El estudiante no es becado. ");
-
-        } else if (promedio >= 3.4 && promedio <= 3.9) {
-            System.out.println("El estudiante recibe una beca parcial del 25%. ");
-
-        } else if (promedio >= 4.0 && promedio <= 4.4) {
-            System.out.println("El estudiante recibe una beca parcial del 50%.");
-        } else if (promedio >= 4.5 && promedio <= 5.0) {
-            System.out.println("El estudiante es becado completamente.");
-        }
-
-        System.out.println("-----------------------------------------------------------------------------------------");
-        System.out.println("Ejercicio8: Determinar si la estudiante es mujer, puede jugar en el equipo de volleyball");
-        System.out.println("------------------------------------------------------------------------------------------");
-
-        if (genero == 'M') {
-            System.out.println("La estudiante puede jugar en el equipo de volleyball");
-        } else {
-            System.out.println("La estudiante no puede jugar en el equipo de volleyball.");
-        }
-
-        System.out.println("--------------------------------------------------------------------------------------------------------------------");
-        System.out.println("Ejercicio9: Determinar si el estudiante tiene una edad mayor o igual a 18 para poder ingresar a la U");
-        System.out.println("-------------------------------------------------------------------------------------------------------------------");
-
-        if (edad >= 18) {
-            System.out.println("El estudiante puede ingresar a la U");
-
-        } else {
-            System.out.println("El estudiante no puede ingresar a la U");
-        }
-
-        System.out.println("--------------------------------------------------------------------------------------------------");
-        System.out.println("Ejercicio10: Determinar si el estudiante esta en el segundo semestre para habilitar el curso catedra de emprendedor. ");
-        System.out.println("---------------------------------------------------------------------------------------------------------------");
-
-        if (semestre == 2) {
-            System.out.println("Tienes activo el curso catedra de emprendedor.");
-
-        } else {
-            System.out.println("No tienes activo el curso catedra de emprendedor.");
-        }
-
-    }
-}
+  </tbody>
+</table>
 
 
 

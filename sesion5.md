@@ -4,11 +4,28 @@
 ## Sesión 5 
 
 
-## Actividad 5: Ejercicios de bucles
-Resolver los siguientes ejercicios:
+Actividad: Diseñar un formulario de pedido de un producto
+Objetivo:
 
-### Ejercicios - while
-1. Pedir al usuario que ingrese un número y mostrar su tabla de multiplicar hasta el número 10.
+Aplicar los conocimientos sobre los tipos de etiquetas HTML para diseñar un formulario de pedido de un producto.
+
+Instrucciones:
+
+Crear un nuevo documento HTML.
+Crear un formulario con los siguientes campos:
+Nombre del producto
+Cantidad
+Precio unitario
+Precio total
+Dirección de envío
+Información de contacto (nombre, correo electrónico, número de teléfono)
+Agregar los siguientes campos relacionados al formulario:
+Método de pago
+Fecha de entrega
+Comentarios
+Utilizar las etiquetas HTML apropiados para cada campo.
+
+
 
 ### Solución
 
