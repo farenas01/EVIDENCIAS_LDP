@@ -23,7 +23,7 @@ En el archivo HTML, agrega el siguiente código:
   <title>Propiedades de espaciado</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
   <div class="contenedor">
     <div class="elemento"></div>
   </div>
